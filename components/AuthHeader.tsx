@@ -27,6 +27,7 @@ const AuthHeader = ({ user }: AuthHeaderProbs) => {
         redirectTo: process.env.NEXT_PUBLIC_AUTH_REDIRECT_TO,
       },
     });
+    window.location.reload();
   };
 
   const handleLogout = async () => {
